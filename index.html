@@ -4,39 +4,61 @@
         <title>Things I've Learned</title>
     </head>
 <body>
-    <h1>Things I've learned</h1>
-    <h2>Internet Basics</h2>
-<ol> 
-    <!-- ol stands for :orderedlist -->
-    <li>HTTP Requests</li>
-    <li>IP Address</li>
-    <li>Servers</li>
+<!-- 
+Name Age
+rusty 2
+Wyatt 13 -->
+<h1>Register</h1>
+<form>
+    <labels for='firstname'>First Name:</labels>
+    <input  name='firstname'type="text" id='firstname' placeholder="John" required>
+    <labels for='lastname'>Last Name:</labels>
+    <input  name='lastname'type="text" id='lastname' placeholder="Smith" required>
+
+
+
+    <p></p>
+    <labels for='male'>Male</labels>
+    <input name='gender'id='male'type="radio" value='Male'>
+    <labels for='female'>Female</labels>
+    <input name='gender'id='female'type="radio" value='female'>
+    <labels for='other'>Other</labels>
+    <input name='gender'id='other'type="radio" value='other'>
+    <p></p>
+
+    <labels for='email'>Email:</labels>
+    <input  name= 'email'type="email" id='email' placeholder="your email" required >
+    <labels for='password'>Password:</labels>
+    <input  name='password'type="password" id='password' minlength="5" maxlength="10" required >
+
+    <p></p>
+
+    <labels for='birthday'>Birthday:
+    <select name='month' > 
+        <option value="" disabled selected>Month</option>
+        <option value='Jan'>Jan</option>        
+        <option value='Feb'>Feb</option>        
+        <option value='Mar'>Mar</option>        
+        <option value='Apr'>Apr</option>        
+    </select>
+    <select name='day'> 
+        <option value="" disabled selected>Day</option>
+        <option value='1'>1</option>        
+        <option value='2'>2</option>        
+        <option value='3'>3</option>        
+        <option value='4'>4</option>        
+    </select>
+    </labels>
     
-</ol>
-<h2>HTML</h2>
+    <p></p>
+    <labels for ='agreement'>I agree to the terms and conditions</labels>
+    <input name='agreement'type='checkbox' checked required>
+    <p></p>
+    <input type="submit">
 
-<ul>
-    <!-- ul stands for unordered list -->
-    <li>Stands for <b>Hypertext Markup Language</b></li>
-    <li>Lots of Tags</li>
-        <ul>
-            <li>Boilerplate</li>
-                <ol>
-                    <li>Doctype</li>
-                    <li>HTML</li>
-                    <li>Head</li>
-                        <ol><li>title</li></ol>
-                    <li>Body</li>
-                </ol>
-            <li>Headings</li>
-            <li>Paragraph</li>
-            <li><i>em</i></li>
-            <li><strong>strong</strong></li>
+    </form>
+    
 
-
-
-        </ul>
-</ul>
 
 </body>    
 </html>
