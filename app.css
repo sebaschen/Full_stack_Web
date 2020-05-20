@@ -1,0 +1,11 @@
+li {
+    border: 2px solid turquoise;
+}
+
+#special{
+    background: salmon;
+}
+.completed{
+    text-decoration: line-through;
+
+}
